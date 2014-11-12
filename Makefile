@@ -9,7 +9,6 @@ include erlang.mk
 ERLC_OPTS += +'{parse_transform, lager_transform}'
 TEST_ERLC_OPTS += +'{parse_transform, lager_transform}'
 
-CT_SUITES = root_handler
 CT_OPTS = -erl_args -config rel/sys.config
 
 SHELL_OPTS = -name ${PROJECT}@`hostname` -s ${PROJECT} -config rel/sys.config
